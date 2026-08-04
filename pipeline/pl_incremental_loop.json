@@ -180,11 +180,11 @@
 												"parameters": {
 													"container": "bronze",
 													"folder": {
-														"value": "@pipeline().parameters.table",
+														"value": "@item().table",
 														"type": "Expression"
 													},
 													"table": {
-														"value": "@concat(pipeline().parameters.table,'_',variables('currenttimestamp'))",
+														"value": "@concat(item().table,'_',variables('currenttimestamp'))",
 														"type": "Expression"
 													}
 												}
